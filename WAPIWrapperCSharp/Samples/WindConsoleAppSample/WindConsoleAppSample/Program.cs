@@ -12,7 +12,13 @@ namespace WindConsoleAppSample
         static void Main(string[] args)
         {
             Console.Write("开始……");
-            Console.WriteLine(WindTest.Test()); //Calling method to test whether DLL rebuild succeeds
+
+            // Custom test block for live DLL integration
+            Console.WriteLine();
+            Console.WriteLine(WindTest.Test());
+            Console.WriteLine("Press enter to continue...");
+            Console.ReadLine();
+            // End test block
 
             Console.ReadLine();
 
