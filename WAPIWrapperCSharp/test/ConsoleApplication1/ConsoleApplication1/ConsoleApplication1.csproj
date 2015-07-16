@@ -41,17 +41,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WAPIWrapperCSharp">
+      <HintPath>..\..\..\C#_Teach_20141216\C#_Teach\TeachSample_C#\WAPIWrapperCSharp\WAPIWrapperCSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WindDataMethod.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\src\WAPIWrapperCSharp\WAPIWrapperCSharp.csproj">
-      <Project>{49cae149-887a-4597-808a-d40a30c1c83b}</Project>
-      <Name>WAPIWrapperCSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
