@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindConsoleAppSample", "WAP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindFormsAppSample1", "WAPIWrapperCSharp\Samples\WindFormsAppSample1\WindFormsAppSample1\WindFormsAppSample1.csproj", "{C7F6428D-4C62-4804-9A15-BCB55903C772}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWindAPI", "WAPIWrapperCSharp\test\HelloWindAPI\HelloWindAPI\HelloWindAPI.csproj", "{891D3748-56C5-4A6A-91EF-9A45414E5D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "WAPIWrapperCSharp\test\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.csproj", "{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,30 @@ Global
 		{C7F6428D-4C62-4804-9A15-BCB55903C772}.Release|x64.Build.0 = Release|x64
 		{C7F6428D-4C62-4804-9A15-BCB55903C772}.Release|x86.ActiveCfg = Release|x86
 		{C7F6428D-4C62-4804-9A15-BCB55903C772}.Release|x86.Build.0 = Release|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Debug|x64.ActiveCfg = Debug|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Debug|x86.ActiveCfg = Debug|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Debug|x86.Build.0 = Debug|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Release|Any CPU.ActiveCfg = Release|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Release|Mixed Platforms.Build.0 = Release|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Release|x64.ActiveCfg = Release|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Release|x86.ActiveCfg = Release|x86
+		{891D3748-56C5-4A6A-91EF-9A45414E5D71}.Release|x86.Build.0 = Release|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Debug|x64.ActiveCfg = Debug|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Debug|x86.ActiveCfg = Debug|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Debug|x86.Build.0 = Debug|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Release|Any CPU.ActiveCfg = Release|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Release|x64.ActiveCfg = Release|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Release|x86.ActiveCfg = Release|x86
+		{DAF0BF37-6DB4-43E5-B95B-BB145DDFE368}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
