@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using WAPIWrapperCSharp;
 using System.Windows.Forms.DataVisualization.Charting;
+using WAPIWrapperCSharp;
 
 namespace WindEDBFormSample
 {
@@ -45,15 +40,18 @@ namespace WindEDBFormSample
         private void InitializeChart()
         {
             #region 设置图表的属性
+
             myChart.BackColor = Color.FromArgb(211, 223, 240);//图表的背景色
             myChart.BackGradientStyle = GradientStyle.TopBottom;//图表背景色的渐变方式
             myChart.BorderlineColor = Color.FromArgb(26, 59, 105);//图表的边框颜色
             myChart.BorderlineDashStyle = ChartDashStyle.Solid;//图表的边框线条样式
             myChart.BorderlineWidth = 2;//图表边框线条的宽度
             myChart.BorderSkin.SkinStyle = BorderSkinStyle.Emboss;//图表边框的皮肤
-            #endregion
+
+            #endregion 设置图表的属性
 
             #region 设置图表的Title
+
             if (myChart.Titles.Count < 1)
             {
                 Title title = new Title();
@@ -65,9 +63,11 @@ namespace WindEDBFormSample
                 myChart.Titles.Clear();
                 myChart.Titles.Add(title);
             }
-            #endregion
+
+            #endregion 设置图表的Title
 
             #region 设置图表区属性
+
             //图表区的名字
             ChartArea chartArea = new ChartArea("Default");
             //背景色
@@ -101,15 +101,18 @@ namespace WindEDBFormSample
 
             myChart.ChartAreas.Clear();
             myChart.ChartAreas.Add(chartArea);
-            #endregion
+
+            #endregion 设置图表区属性
 
             #region 图例及图例的位置
+
             Legend legend = new Legend();
             legend.Alignment = StringAlignment.Center;
             legend.Docking = Docking.Bottom;
 
             this.myChart.Legends.Add(legend);
-            #endregion
+
+            #endregion 图例及图例的位置
         }
 
         private void SetChartTitle()

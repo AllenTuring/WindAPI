@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using WAPIWrapperCSharp;
 
 namespace WindCommon
 {
-    class WindDataMethod
+    internal class WindDataMethod
     {
         public static string WindDataToString(WindData wd, string strFuncName)
         {
@@ -79,6 +76,7 @@ namespace WindCommon
                             }
                         }
                         break;
+
                     case "wsi":
                     case "wst":
                         {
@@ -119,6 +117,7 @@ namespace WindCommon
                             }
                         }
                         break;
+
                     case "wsq":
                     case "wss":
                     case "wset":
@@ -152,6 +151,7 @@ namespace WindCommon
                             }
                         }
                         break;
+
                     default:
                         {
                             foreach (object o in odata)

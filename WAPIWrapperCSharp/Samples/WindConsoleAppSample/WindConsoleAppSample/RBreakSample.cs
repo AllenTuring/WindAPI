@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using WAPIWrapperCSharp;
 
 namespace WindConsoleAppSample
 {
-    class RBreakSample
+    internal class RBreakSample
     {
         public void DoIt()
         {
@@ -66,7 +65,7 @@ namespace WindConsoleAppSample
 
                 bool bCon1 = (dCurPrice > dBbreak) && (0 == nCurHold); //空仓做多条件
                 bool bCon2 = (dCurPrice < dSbreak) && (0 == nCurHold); //空仓做空条件
-                bool bCon3 = (nCurHold > 0) && (dCurHigh > dSsetup) && (dCurPrice < dSenter); //多单反转卖出条件:holding>0 and 今高>观察卖出价 and c<反转卖出价; 
+                bool bCon3 = (nCurHold > 0) && (dCurHigh > dSsetup) && (dCurPrice < dSenter); //多单反转卖出条件:holding>0 and 今高>观察卖出价 and c<反转卖出价;
                 bool bCon4 = (nCurHold < 0) && (dCurLow < dBsetup) && (dCurPrice > dBenter); //空单反转买入条件:=holding<0 and 今低<观察买入价 and c>反转买入价;
 
                 //交易

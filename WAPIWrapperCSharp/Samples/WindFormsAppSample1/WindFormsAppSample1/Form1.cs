@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using WAPIWrapperCSharp;
 using WindCommon;
@@ -27,7 +21,7 @@ namespace WindowsFormsApplication1
                 return;
             //查询一次
             WindData wd = m_w.wsq("AAL.L,ABF.L", "rt_time,rt_pre_close,rt_open,rt_last,rt_latest,rt_chg", "");
-            
+
             string s = WindDataMethod.WindDataToString(wd, "wsq");
             ShowInRichText(s);
         }
@@ -55,7 +49,7 @@ namespace WindowsFormsApplication1
                 m_w.stop();
         }
 
-        delegate void ShowWindData(string s);
+        private delegate void ShowWindData(string s);
 
         private void DisplayWindData(ShowWindData show, string s)
         {

@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using WAPIWrapperCSharp;
 using WindCommon;
 
 namespace WindConsoleAppSample
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.Write("开始……");
 
@@ -27,14 +24,14 @@ namespace WindConsoleAppSample
             TradeSample trade = new TradeSample();
             trade.DoIt();
 
-//             RBreakSample rbreakSample = new RBreakSample();
-//             rbreakSample.DoIt();
+            //             RBreakSample rbreakSample = new RBreakSample();
+            //             rbreakSample.DoIt();
 
             Console.WriteLine("End......");
             Console.ReadLine();
         }
 
-        static void DoAPISameple()
+        private static void DoAPISameple()
         {
             WindAPI w = new WindAPI();
             w.start();
@@ -49,7 +46,7 @@ namespace WindConsoleAppSample
             w.stop();
         }
 
-        static void OutputWindData(WindData wd, string strFuncName)
+        private static void OutputWindData(WindData wd, string strFuncName)
         {
             string s = WindDataMethod.WindDataToString(wd, strFuncName);
             Console.Write(s);

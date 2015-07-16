@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using WAPIWrapperCSharp;
 using WindCommon;
 
 namespace WindConsoleAppSample
 {
-    class TradeSample
+    internal class TradeSample
     {
         public void DoIt()
         {
             string strErrorMsg;
             WindAPI w = new WindAPI();
-            
+
             //登录WFT
             int nRetCode = w.start();
             if (0 != nRetCode)//登录失败
