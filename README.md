@@ -1,8 +1,6 @@
 # WindAPI
-Experimenting with the Wind API for trading, starting from the default examples of C# implementation. Using Visual Studio Community 2013. Top-level directory "WindAPITradingApplication.sln" is the overall unifying Visual Studio solution.
+Experimenting with the Wind API for trading, starting from the default examples of C# implementation. Using Visual Studio Community 2013.
 
 Affiliation: DLQH Shanghai
 
 Note: No license rights are given.
-
-Original development for Wind API and service credit are given to Wind Inform. Corp, sourcing from Dajiangzhang
