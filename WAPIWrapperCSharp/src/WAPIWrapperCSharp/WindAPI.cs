@@ -7,6 +7,14 @@ using System.Timers;
 
 namespace WAPIWrapperCSharp
 {
+    public class WindTest
+    {
+        public static string Test()
+        {
+            return "DLL Update Test Success";
+        }
+    }
+
     public class WindData
     {
         public string[] codeList { get; set; }

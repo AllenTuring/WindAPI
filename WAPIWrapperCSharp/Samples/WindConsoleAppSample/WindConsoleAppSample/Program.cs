@@ -12,6 +12,8 @@ namespace WindConsoleAppSample
         static void Main(string[] args)
         {
             Console.Write("开始……");
+            Console.WriteLine(WindTest.Test()); //Calling method to test whether DLL rebuild succeeds
+
             Console.ReadLine();
 
             //DoAPISameple();
